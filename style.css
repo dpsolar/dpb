@@ -1,141 +1,82 @@
-/* General Styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #fff6cc; /* Moderate yellow */
+  color: #333;
 }
 
-/* Header Section */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background: #FFD700; /* Moderate Yellow */
-    flex-wrap: wrap;
+nav {
+  background-color: #000; /* Black navigation bar */
+  padding: 10px 0;
 }
 
-.logo {
-    width: 100px;
-}
-
-/* Navigation Bar */
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-    display: inline;
+  margin: 0 15px;
 }
 
 nav ul li a {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
-/* Responsive Navigation for Small Screens */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff2a8;
 }
 
-/* Sections */
-h2 {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 1.8em;
+.slogan {
+  font-style: italic;
+  font-size: 1.2em;
 }
 
-/* Promotional Video */
-.promo-video {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+section {
+  padding: 20px;
 }
 
-.promo-video video {
-    width: 90%;
-    max-width: 600px;
-    border-radius: 10px;
-    border: 3px solid #FFD700;
+.centered-section {
+  text-align: center;
 }
 
-/* Product & Project Sections */
-.product-list, .video-gallery, .image-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    padding: 10px;
+.products img,
+.projects img,
+.about img {
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-.product-list img, .image-gallery img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 10px;
-    border: 2px solid #FFD700;
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
 }
 
-/* Make videos responsive */
-.video-gallery video {
-    width: 90%;
-    max-width: 300px;
-    border-radius: 10px;
-    border: 2px solid #FFD700;
+footer h2 {
+  text-align: center;
 }
 
-/* Contact Section */
-.contact {
-    text-align: center;
-    margin-top: 20px;
+footer p {
+  margin: 5px 0;
 }
 
-/* Social Media Icons */
 .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
+  text-align: center;
+  margin-top: 15px;
 }
 
 .social-icons img {
-    width: 40px;
+  width: 35px;
+  margin: 0 10px;
+  border-radius: 50%;
 }
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #FFD700;
-    color: black;
-    font-weight: bold;
-}
-
-/* Mobile Optimization */
-@media (max-width: 480px) {
-    h2 {
-        font-size: 1.5em;
-    }
-
-    .product-list img, .image-gallery img {
-        max-width: 150px;
-    }
-
-    .video-gallery video {
-        max-width: 250px;
-    }
-} 
