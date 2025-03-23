@@ -1,0 +1,141 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #FFD700; /* Moderate Yellow */
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 100px;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Responsive Navigation for Small Screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Sections */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.8em;
+}
+
+/* Promotional Video */
+.promo-video {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.promo-video video {
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    border: 3px solid #FFD700;
+}
+
+/* Product & Project Sections */
+.product-list, .video-gallery, .image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.product-list img, .image-gallery img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #FFD700;
+}
+
+/* Make videos responsive */
+.video-gallery video {
+    width: 90%;
+    max-width: 300px;
+    border-radius: 10px;
+    border: 2px solid #FFD700;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.social-icons img {
+    width: 40px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #FFD700;
+    color: black;
+    font-weight: bold;
+}
+
+/* Mobile Optimization */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .product-list img, .image-gallery img {
+        max-width: 150px;
+    }
+
+    .video-gallery video {
+        max-width: 250px;
+    }
+} 
