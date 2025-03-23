@@ -41,14 +41,14 @@ header {
 header .title {
   font-family: 'Times New Roman', serif;
   font-size: 48px;
-  color: darkblue;
+  color: #111111; /* very dark */
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .slogan {
   font-size: 20px;
-  color: darkgreen;
+  color: #90ee90; /* light green */
   font-weight: bold;
 }
 
