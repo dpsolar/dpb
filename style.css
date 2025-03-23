@@ -1,44 +1,17 @@
-section {
-  margin: 40px auto;
-  padding: 20px;
-  max-width: 1000px;
-  text-align: center;
-}
-
-.about img {
-  margin-top: 20px;
-  max-width: 200px;
-  border-radius: 10px;
-}
-
-.products img,
-.projects img {
-  width: 200px;
-  margin: 10px;
-  border-radius: 8px;
-}
-
-.videos video {
-  width: 300px;
-  margin: 10px;
-  border-radius: 10px;
-}
-
-footer {
-  background-color: #111;
-  color: white;
-  padding: 30px 20px;
-  text-align: center;
-  font-size: 14px;
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #fff8dc; /* Moderate Yellow */
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  line-height: 1.6;
 }
 
+/* Navigation bar */
 nav {
   background-color: black;
   padding: 10px 0;
@@ -60,4 +33,88 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  font-size: 16px;
+}
+
+/* Header section */
+header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  font-size: 3em;
+  color: #333;
+}
+
+.slogan {
+  font-size: 1.2em;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Section layout */
+section {
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 1000px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* About Section */
+.about img {
+  margin-top: 20px;
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+/* Products Section */
+.products p {
+  margin: 10px auto;
+  font-weight: bold;
+  color: #444;
+}
+
+.products img {
+  width: 200px;
+  margin: 10px;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.products img:hover {
+  transform: scale(1.05);
+}
+
+/* Projects Section */
+.projects img {
+  width: 300px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+/* Videos Section */
+.videos video {
+  width: 300px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/* Footer Section */
+footer {
+  background-color: #111;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 10px 0;
 }
