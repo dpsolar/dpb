@@ -1,13 +1,17 @@
+/* General Page Styling */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #fff6cc; /* Moderate yellow */
+  font-family: Arial, sans-serif;
+  background-color: #fff8dc; /* moderate yellow */
   color: #333;
 }
 
 nav {
-  background-color: #000; /* Black navigation bar */
+  background-color: #000;
   padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav ul {
@@ -19,64 +23,59 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin: 0 20px;
 }
 
 nav ul li a {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
   font-weight: bold;
 }
 
 header {
   text-align: center;
-  padding: 20px;
-  background-color: #fff2a8;
+  padding: 30px 15px;
+  background-color: #ffe873;
 }
 
 .slogan {
   font-style: italic;
-  font-size: 1.2em;
+  margin-top: 10px;
 }
 
 section {
-  padding: 20px;
+  padding: 40px 20px;
+  text-align: center;
 }
 
-.centered-section {
-  text-align: center;
+.about img {
+  max-width: 200px;
+  margin-top: 15px;
 }
 
 .products img,
-.projects img,
-.about img {
+.projects img {
   width: 200px;
+  height: auto;
   margin: 10px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+.videos video {
+  width: 300px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
 footer {
-  background-color: #333;
+  background-color: #000;
   color: white;
-  padding: 20px;
-}
-
-footer h2 {
   text-align: center;
+  padding: 30px 20px;
 }
 
 footer p {
   margin: 5px 0;
-}
-
-.social-icons {
-  text-align: center;
-  margin-top: 15px;
-}
-
-.social-icons img {
-  width: 35px;
-  margin: 0 10px;
-  border-radius: 50%;
 }
