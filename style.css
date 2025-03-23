@@ -1,4 +1,4 @@
-/* Reset some default styles */
+/* Reset some default styling */
 * {
   margin: 0;
   padding: 0;
@@ -6,58 +6,65 @@
 }
 
 body {
-  background-color: #fff8dc; /* Moderate Yellow */
   font-family: Arial, sans-serif;
+  background-color: #fff8e1; /* Moderate yellow background */
+  color: #333;
   line-height: 1.6;
 }
 
-/* Navigation bar */
+/* Navigation Bar */
 nav {
-  background-color: black;
+  background-color: #000;
   padding: 10px 0;
-  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 nav ul li {
-  display: inline;
-  margin: 0 15px;
+  margin: 0 20px;
 }
 
 nav ul li a {
-  color: white;
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 16px;
+  transition: color 0.3s;
 }
 
-/* Header section */
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Header */
 header {
   text-align: center;
-  padding: 40px 20px;
+  padding: 40px 20px 20px;
+  background-color: #fff3cd;
 }
 
 header h1 {
   font-size: 3em;
-  color: #333;
+  font-family: "Times New Roman", Times, serif;
+  color: #004d00;
 }
 
 .slogan {
-  font-size: 1.2em;
-  color: #666;
+  font-size: 1.3em;
+  color: #cc6600;
   margin-top: 10px;
 }
 
-/* Section layout */
+/* Sections */
 section {
-  margin: 40px auto;
-  padding: 20px;
-  max-width: 1000px;
+  padding: 40px 20px;
   text-align: center;
 }
 
@@ -67,54 +74,74 @@ section h2 {
   color: #222;
 }
 
-/* About Section */
-.about img {
-  margin-top: 20px;
-  max-width: 200px;
-  border-radius: 10px;
+/* About Us */
+.about p {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  font-size: 1.1em;
 }
 
-/* Products Section */
+.about img {
+  max-width: 200px;
+  margin-top: 20px;
+}
+
+/* Products */
 .products p {
-  margin: 10px auto;
-  font-weight: bold;
-  color: #444;
+  font-size: 1.1em;
+  margin-bottom: 20px;
 }
 
 .products img {
   width: 200px;
+  height: auto;
   margin: 10px;
+  border: 2px solid #ddd;
   border-radius: 8px;
-  transition: transform 0.2s;
+  transition: transform 0.3s;
 }
 
 .products img:hover {
   transform: scale(1.05);
 }
 
-/* Projects Section */
+/* Projects */
 .projects img {
-  width: 300px;
+  width: 250px;
+  height: auto;
   margin: 10px;
   border-radius: 8px;
+  border: 1px solid #ccc;
 }
 
-/* Videos Section */
+/* Videos */
 .videos video {
-  width: 300px;
-  margin: 10px;
-  border-radius: 10px;
+  width: 320px;
+  height: auto;
+  margin: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
-/* Footer Section */
+/* Contact Footer */
 footer {
-  background-color: #111;
-  color: white;
+  background-color: #000;
+  color: #fff;
   padding: 30px 20px;
   text-align: center;
-  font-size: 14px;
+}
+
+footer h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #ffcc00;
 }
 
 footer p {
   margin: 10px 0;
+  font-size: 1em;
+}
+
+footer strong {
+  color: #ffd700;
 }
